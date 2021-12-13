@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!--loading jquery file-->
+	    <script type="text/javascript" language="javascript" src="js/jquery-3.5.1.min.js"></script>
+	    <!-- other javascript files used in the page-->
+		<script type="text/javascript" src="js/all.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script> 
+		<!-- other CSS files used in the page-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+		<!-- custom CSS file used -->       
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <title>ColorSpace</title>
+	</head>
+	<body id="grad">
+		<!-- horizontal navbar -->
+		<header class="sticky-top proper-display my-4">
+			<nav class="navbar navbar-expand-lg">
+				<!-- logo applied-->
+				<img src="color-space-logo.png" class="mx-4 image-logo" alt="">
+				<a class="navbar-brand text-white" href="#">ColorSpace<sup class="super-tag">Beta</sup></a>
+				<!-- The button below is triggered when screen width becomes less than 769px-->
+				<button id="ham-burger align-self-end" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="nav ml-auto mr-5">
+						<li class="nav-item">
+							<a class="nav-link nav-link-item" href="#"><span class="hover-line">PALETTES</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-item" href="#"><span class="hover-line gradient">GRADIENT</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-item" href="#"><span class="hover-line">CONTACT</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-item" href="#"><span class="hover-line">INFO</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-item" href="#"><span class="hover-line"><i class="fab fa-twitter"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<h1 class="heading-1 text-white mb-4">Generate a Color Gradient</h1>
+			<p class="para-1 mb-4">Choose orientation</p>
+			<div class="arrow-wrap">
+				<ul class="custom-arrow-list">
+					<li id="selected-arrow"><a href="#"><i class="fas fa-arrow-up rotate-right"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-right"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-right rotate-right"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-down"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-down rotate-right"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-left"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-left rotate-right"></i></a></li>
+					<li><a href="#"><i class="fas fa-arrow-up"></i></a></li>
+					<li ><a href="#"><i class="fas fa-redo-alt rotate-left"></i></a></li>
+				</ul>
+			</div>
+			<p class="para-2">Enter colors</p>
+			<div class="button-wrap mb-4">
+				<button class="btn rounded-pill color-button-1">#051937</button>
+				<button class="btn rounded-pill color-button-2">#A8EB12</button>
+			</div>
+			<div class="button-wrap mb-5">
+				<button class="btn rounded-pill btn-info generate-button" type="submit"><i class="fas fa-rocket"></i> GENERATE</button>
+			</div>
+			<div class="ml-4 code-body">
+				<p class="para-code-heading m-0">CSS Code:</p>
+				<p class="para-code">background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);</p>
+			</div>
+		</div>
+	</body>
+</html>
